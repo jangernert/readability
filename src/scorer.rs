@@ -6,16 +6,16 @@ use url::Url;
 use regex::Regex;
 use lazy_static::lazy_static;
 use html5ever::tree_builder::TreeSink;
-use html5ever::rcdom::Node;
-use html5ever::rcdom::NodeData::{Element, Text};
-use html5ever::rcdom::Handle;
-use html5ever::rcdom::NodeData::{
+use markup5ever_rcdom::Node;
+use markup5ever_rcdom::NodeData::{Element, Text};
+use markup5ever_rcdom::Handle;
+use markup5ever_rcdom::NodeData::{
     Document,
     Doctype,
     Comment,
     ProcessingInstruction
 };
-use html5ever:: rcdom::RcDom;
+use markup5ever_rcdom::RcDom;
 use html5ever::{QualName, LocalName};
 use html5ever::tree_builder::{NodeOrText, ElementFlags};
 use html5ever::{ns, namespace_url};
